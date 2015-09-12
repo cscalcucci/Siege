@@ -1,0 +1,521 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		66CE09501BA3E0E7003DEF45 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66CE094F1BA3E0E7003DEF45 /* AppDelegate.swift */; };
+		66CE09521BA3E0E7003DEF45 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66CE09511BA3E0E7003DEF45 /* ViewController.swift */; };
+		66CE09551BA3E0E7003DEF45 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 66CE09531BA3E0E7003DEF45 /* Main.storyboard */; };
+		66CE09581BA3E0E7003DEF45 /* Aphelion.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 66CE09561BA3E0E7003DEF45 /* Aphelion.xcdatamodeld */; };
+		66CE095A1BA3E0E7003DEF45 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 66CE09591BA3E0E7003DEF45 /* Assets.xcassets */; };
+		66CE095D1BA3E0E7003DEF45 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 66CE095B1BA3E0E7003DEF45 /* LaunchScreen.storyboard */; };
+		66CE09681BA3E0E7003DEF45 /* AphelionTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66CE09671BA3E0E7003DEF45 /* AphelionTests.swift */; };
+		66CE09731BA3E0E7003DEF45 /* AphelionUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66CE09721BA3E0E7003DEF45 /* AphelionUITests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		66CE09641BA3E0E7003DEF45 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 66CE09441BA3E0E7003DEF45 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 66CE094B1BA3E0E7003DEF45;
+			remoteInfo = Aphelion;
+		};
+		66CE096F1BA3E0E7003DEF45 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 66CE09441BA3E0E7003DEF45 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 66CE094B1BA3E0E7003DEF45;
+			remoteInfo = Aphelion;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		66CE094C1BA3E0E7003DEF45 /* Aphelion.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Aphelion.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		66CE094F1BA3E0E7003DEF45 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		66CE09511BA3E0E7003DEF45 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		66CE09541BA3E0E7003DEF45 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		66CE09571BA3E0E7003DEF45 /* Aphelion.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Aphelion.xcdatamodel; sourceTree = "<group>"; };
+		66CE09591BA3E0E7003DEF45 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		66CE095C1BA3E0E7003DEF45 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		66CE095E1BA3E0E7003DEF45 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		66CE09631BA3E0E7003DEF45 /* AphelionTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = AphelionTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		66CE09671BA3E0E7003DEF45 /* AphelionTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AphelionTests.swift; sourceTree = "<group>"; };
+		66CE09691BA3E0E7003DEF45 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		66CE096E1BA3E0E7003DEF45 /* AphelionUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = AphelionUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		66CE09721BA3E0E7003DEF45 /* AphelionUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AphelionUITests.swift; sourceTree = "<group>"; };
+		66CE09741BA3E0E7003DEF45 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		66CE09491BA3E0E7003DEF45 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		66CE09601BA3E0E7003DEF45 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		66CE096B1BA3E0E7003DEF45 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		66CE09431BA3E0E7003DEF45 = {
+			isa = PBXGroup;
+			children = (
+				66CE094E1BA3E0E7003DEF45 /* Aphelion */,
+				66CE09661BA3E0E7003DEF45 /* AphelionTests */,
+				66CE09711BA3E0E7003DEF45 /* AphelionUITests */,
+				66CE094D1BA3E0E7003DEF45 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		66CE094D1BA3E0E7003DEF45 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				66CE094C1BA3E0E7003DEF45 /* Aphelion.app */,
+				66CE09631BA3E0E7003DEF45 /* AphelionTests.xctest */,
+				66CE096E1BA3E0E7003DEF45 /* AphelionUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		66CE094E1BA3E0E7003DEF45 /* Aphelion */ = {
+			isa = PBXGroup;
+			children = (
+				66CE094F1BA3E0E7003DEF45 /* AppDelegate.swift */,
+				66CE09511BA3E0E7003DEF45 /* ViewController.swift */,
+				66CE09531BA3E0E7003DEF45 /* Main.storyboard */,
+				66CE09591BA3E0E7003DEF45 /* Assets.xcassets */,
+				66CE095B1BA3E0E7003DEF45 /* LaunchScreen.storyboard */,
+				66CE095E1BA3E0E7003DEF45 /* Info.plist */,
+				66CE09561BA3E0E7003DEF45 /* Aphelion.xcdatamodeld */,
+			);
+			path = Aphelion;
+			sourceTree = "<group>";
+		};
+		66CE09661BA3E0E7003DEF45 /* AphelionTests */ = {
+			isa = PBXGroup;
+			children = (
+				66CE09671BA3E0E7003DEF45 /* AphelionTests.swift */,
+				66CE09691BA3E0E7003DEF45 /* Info.plist */,
+			);
+			path = AphelionTests;
+			sourceTree = "<group>";
+		};
+		66CE09711BA3E0E7003DEF45 /* AphelionUITests */ = {
+			isa = PBXGroup;
+			children = (
+				66CE09721BA3E0E7003DEF45 /* AphelionUITests.swift */,
+				66CE09741BA3E0E7003DEF45 /* Info.plist */,
+			);
+			path = AphelionUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		66CE094B1BA3E0E7003DEF45 /* Aphelion */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 66CE09771BA3E0E7003DEF45 /* Build configuration list for PBXNativeTarget "Aphelion" */;
+			buildPhases = (
+				66CE09481BA3E0E7003DEF45 /* Sources */,
+				66CE09491BA3E0E7003DEF45 /* Frameworks */,
+				66CE094A1BA3E0E7003DEF45 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Aphelion;
+			productName = Aphelion;
+			productReference = 66CE094C1BA3E0E7003DEF45 /* Aphelion.app */;
+			productType = "com.apple.product-type.application";
+		};
+		66CE09621BA3E0E7003DEF45 /* AphelionTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 66CE097A1BA3E0E7003DEF45 /* Build configuration list for PBXNativeTarget "AphelionTests" */;
+			buildPhases = (
+				66CE095F1BA3E0E7003DEF45 /* Sources */,
+				66CE09601BA3E0E7003DEF45 /* Frameworks */,
+				66CE09611BA3E0E7003DEF45 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				66CE09651BA3E0E7003DEF45 /* PBXTargetDependency */,
+			);
+			name = AphelionTests;
+			productName = AphelionTests;
+			productReference = 66CE09631BA3E0E7003DEF45 /* AphelionTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		66CE096D1BA3E0E7003DEF45 /* AphelionUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 66CE097D1BA3E0E7003DEF45 /* Build configuration list for PBXNativeTarget "AphelionUITests" */;
+			buildPhases = (
+				66CE096A1BA3E0E7003DEF45 /* Sources */,
+				66CE096B1BA3E0E7003DEF45 /* Frameworks */,
+				66CE096C1BA3E0E7003DEF45 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				66CE09701BA3E0E7003DEF45 /* PBXTargetDependency */,
+			);
+			name = AphelionUITests;
+			productName = AphelionUITests;
+			productReference = 66CE096E1BA3E0E7003DEF45 /* AphelionUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		66CE09441BA3E0E7003DEF45 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0700;
+				ORGANIZATIONNAME = Aphelion;
+				TargetAttributes = {
+					66CE094B1BA3E0E7003DEF45 = {
+						CreatedOnToolsVersion = 7.0;
+					};
+					66CE09621BA3E0E7003DEF45 = {
+						CreatedOnToolsVersion = 7.0;
+						TestTargetID = 66CE094B1BA3E0E7003DEF45;
+					};
+					66CE096D1BA3E0E7003DEF45 = {
+						CreatedOnToolsVersion = 7.0;
+						TestTargetID = 66CE094B1BA3E0E7003DEF45;
+					};
+				};
+			};
+			buildConfigurationList = 66CE09471BA3E0E7003DEF45 /* Build configuration list for PBXProject "Aphelion" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 66CE09431BA3E0E7003DEF45;
+			productRefGroup = 66CE094D1BA3E0E7003DEF45 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				66CE094B1BA3E0E7003DEF45 /* Aphelion */,
+				66CE09621BA3E0E7003DEF45 /* AphelionTests */,
+				66CE096D1BA3E0E7003DEF45 /* AphelionUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		66CE094A1BA3E0E7003DEF45 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				66CE095D1BA3E0E7003DEF45 /* LaunchScreen.storyboard in Resources */,
+				66CE095A1BA3E0E7003DEF45 /* Assets.xcassets in Resources */,
+				66CE09551BA3E0E7003DEF45 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		66CE09611BA3E0E7003DEF45 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		66CE096C1BA3E0E7003DEF45 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		66CE09481BA3E0E7003DEF45 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				66CE09581BA3E0E7003DEF45 /* Aphelion.xcdatamodeld in Sources */,
+				66CE09521BA3E0E7003DEF45 /* ViewController.swift in Sources */,
+				66CE09501BA3E0E7003DEF45 /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		66CE095F1BA3E0E7003DEF45 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				66CE09681BA3E0E7003DEF45 /* AphelionTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		66CE096A1BA3E0E7003DEF45 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				66CE09731BA3E0E7003DEF45 /* AphelionUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		66CE09651BA3E0E7003DEF45 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 66CE094B1BA3E0E7003DEF45 /* Aphelion */;
+			targetProxy = 66CE09641BA3E0E7003DEF45 /* PBXContainerItemProxy */;
+		};
+		66CE09701BA3E0E7003DEF45 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 66CE094B1BA3E0E7003DEF45 /* Aphelion */;
+			targetProxy = 66CE096F1BA3E0E7003DEF45 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		66CE09531BA3E0E7003DEF45 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				66CE09541BA3E0E7003DEF45 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		66CE095B1BA3E0E7003DEF45 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				66CE095C1BA3E0E7003DEF45 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		66CE09751BA3E0E7003DEF45 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		66CE09761BA3E0E7003DEF45 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		66CE09781BA3E0E7003DEF45 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = Aphelion/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = cscal.Aphelion;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		66CE09791BA3E0E7003DEF45 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = Aphelion/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = cscal.Aphelion;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		66CE097B1BA3E0E7003DEF45 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = AphelionTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = cscal.AphelionTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Aphelion.app/Aphelion";
+			};
+			name = Debug;
+		};
+		66CE097C1BA3E0E7003DEF45 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = AphelionTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = cscal.AphelionTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Aphelion.app/Aphelion";
+			};
+			name = Release;
+		};
+		66CE097E1BA3E0E7003DEF45 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = AphelionUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = cscal.AphelionUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = Aphelion;
+				USES_XCTRUNNER = YES;
+			};
+			name = Debug;
+		};
+		66CE097F1BA3E0E7003DEF45 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = AphelionUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = cscal.AphelionUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = Aphelion;
+				USES_XCTRUNNER = YES;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		66CE09471BA3E0E7003DEF45 /* Build configuration list for PBXProject "Aphelion" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				66CE09751BA3E0E7003DEF45 /* Debug */,
+				66CE09761BA3E0E7003DEF45 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		66CE09771BA3E0E7003DEF45 /* Build configuration list for PBXNativeTarget "Aphelion" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				66CE09781BA3E0E7003DEF45 /* Debug */,
+				66CE09791BA3E0E7003DEF45 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		66CE097A1BA3E0E7003DEF45 /* Build configuration list for PBXNativeTarget "AphelionTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				66CE097B1BA3E0E7003DEF45 /* Debug */,
+				66CE097C1BA3E0E7003DEF45 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		66CE097D1BA3E0E7003DEF45 /* Build configuration list for PBXNativeTarget "AphelionUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				66CE097E1BA3E0E7003DEF45 /* Debug */,
+				66CE097F1BA3E0E7003DEF45 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		66CE09561BA3E0E7003DEF45 /* Aphelion.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				66CE09571BA3E0E7003DEF45 /* Aphelion.xcdatamodel */,
+			);
+			currentVersion = 66CE09571BA3E0E7003DEF45 /* Aphelion.xcdatamodel */;
+			path = Aphelion.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = 66CE09441BA3E0E7003DEF45 /* Project object */;
+}
