@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		6600FA4A1BDD994D005004E9 /* Utility.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6600FA491BDD994D005004E9 /* Utility.swift */; settings = {ASSET_TAGS = (); }; };
+		6600FA4C1BDDD2D9005004E9 /* Creature.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6600FA4B1BDDD2D9005004E9 /* Creature.swift */; settings = {ASSET_TAGS = (); }; };
 		66CE09501BA3E0E7003DEF45 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66CE094F1BA3E0E7003DEF45 /* AppDelegate.swift */; };
 		66CE09521BA3E0E7003DEF45 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66CE09511BA3E0E7003DEF45 /* ViewController.swift */; };
 		66CE09551BA3E0E7003DEF45 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 66CE09531BA3E0E7003DEF45 /* Main.storyboard */; };
@@ -35,6 +37,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		6600FA491BDD994D005004E9 /* Utility.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Utility.swift; sourceTree = "<group>"; };
+		6600FA4B1BDDD2D9005004E9 /* Creature.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Creature.swift; sourceTree = "<group>"; };
 		66CE094C1BA3E0E7003DEF45 /* Aphelion.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Aphelion.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		66CE094F1BA3E0E7003DEF45 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		66CE09511BA3E0E7003DEF45 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -101,6 +105,8 @@
 			children = (
 				66CE094F1BA3E0E7003DEF45 /* AppDelegate.swift */,
 				66CE09511BA3E0E7003DEF45 /* ViewController.swift */,
+				6600FA4B1BDDD2D9005004E9 /* Creature.swift */,
+				6600FA491BDD994D005004E9 /* Utility.swift */,
 				66CE09531BA3E0E7003DEF45 /* Main.storyboard */,
 				66CE09591BA3E0E7003DEF45 /* Assets.xcassets */,
 				66CE095B1BA3E0E7003DEF45 /* LaunchScreen.storyboard */,
@@ -258,8 +264,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6600FA4A1BDD994D005004E9 /* Utility.swift in Sources */,
 				66CE09581BA3E0E7003DEF45 /* Aphelion.xcdatamodeld in Sources */,
 				66CE09521BA3E0E7003DEF45 /* ViewController.swift in Sources */,
+				6600FA4C1BDDD2D9005004E9 /* Creature.swift in Sources */,
 				66CE09501BA3E0E7003DEF45 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -401,9 +409,11 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = Aphelion/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = cscal.Aphelion;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -412,9 +422,11 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = Aphelion/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = cscal.Aphelion;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
@@ -485,6 +497,7 @@
 				66CE09791BA3E0E7003DEF45 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		66CE097A1BA3E0E7003DEF45 /* Build configuration list for PBXNativeTarget "AphelionTests" */ = {
 			isa = XCConfigurationList;
@@ -493,6 +506,7 @@
 				66CE097C1BA3E0E7003DEF45 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		66CE097D1BA3E0E7003DEF45 /* Build configuration list for PBXNativeTarget "AphelionUITests" */ = {
 			isa = XCConfigurationList;
@@ -501,6 +515,7 @@
 				66CE097F1BA3E0E7003DEF45 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 
