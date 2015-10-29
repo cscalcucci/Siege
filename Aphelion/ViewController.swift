@@ -65,20 +65,14 @@ class ViewController: UIViewController {
 
     override func viewDidLayoutSubviews() {
 
-        playerName.text = "Name: \(player.name)"
-        playerLevel.text = "Level: \(player.level)"
-
-        mobName.text = "Name: \(mob.name)"
-        mobLevel.text = "Level: \(mob.level)"
-
         playerHealthBar.transform = CGAffineTransformMakeScale(1.0, 3.0)
         playerExpBar.transform = CGAffineTransformMakeScale(1.0, 3.0)
         mobHealthBar.transform = CGAffineTransformMakeScale(1.0, 3.0)
 
         updateValues()
+
         mobHealthBar.setProgress(0.0, animated: true)
         playerExpBar.setProgress(0.0, animated: true)
-
 
     }
 
@@ -101,17 +95,18 @@ class ViewController: UIViewController {
 
     }
 
-
-    //New Code
     func attack(attacker: Creature, defender: Creature) {
         dispatch_async(dispatch_get_global_queue(DISPATCH_QUEUE_PRIORITY_DEFAULT, 0)) {
 
-            let attackValue = Int.random(0...attacker.atk) - defender.def
-            defender.health.current -= attackValue
+            let attackValue = Int.random(0...(attacker.atk - defender.def))
 
             dispatch_async(dispatch_get_main_queue()) {
                 self.activityField.text = self.activityField.text + "\(attacker.name) attacked \(defender.name) for \(attackValue) damage! \n"
             }
+
+            defender.health.current -= attackValue
+
+            self.turnCount++
 
             self.updateValues()
         }
@@ -166,14 +161,15 @@ class ViewController: UIViewController {
         dispatch_async(dispatch_get_main_queue()) {
 
             print("========== CONTINUING GAME ==========")
-            self.mob = Mob(name: "Fuccboi\(self.player.level)", level: self.player.level)
 
+            self.mob = Mob(name: "Fuccboi\(self.player.level)", level: self.player.level)
 
             self.player.reset()
 
             self.activityField.text = "\(self.player.name) has encountered a wild \(self.mob.name)! \n"
-            self.mobLevel.text = "\(self.mob.level)"
 
+            self.playerName.text = "Name: \(self.player.name)"
+            self.playerLevel.text = "Level: \(self.player.level)"
 
             self.attackBtn.backgroundColor = UIColor.redColor()
             self.attackBtn.setTitle("Attack", forState: .Normal)
@@ -190,6 +186,13 @@ class ViewController: UIViewController {
             let mobHealth = 1 - (Float(self.mob.health.current) / Float(self.mob.health.max))
 
             dispatch_async(dispatch_get_main_queue()) {
+
+                self.mobName.text = "Name: \(self.mob.name)"
+                self.mobLevel.text = "Level: \(self.mob.level)"
+
+
+                self.playerName.text = "Name: \(self.player.name)"
+                self.playerLevel.text = "Level: \(self.player.level)"
 
                 self.playerHealthBar.setProgress(playerHealth, animated: true)
                 self.mobHealthBar.setProgress(mobHealth, animated: true)

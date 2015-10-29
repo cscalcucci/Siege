@@ -74,6 +74,7 @@ class Player : Creature {
     var level : Int = 0  {
         didSet{
             self.health.max = healthBase + ((level - 1) * 20)
+            self.health.current = self.health.max
             self.experience.current = self.experience.current - ((self.level - 1) * 100)
             self.experience.max = (self.level * 100)
             self.atk = atkBase + ((level - 1) * 20)
@@ -94,6 +95,7 @@ class Player : Creature {
 
         self.name = name
         self.living = true
+
         self.setLevel(1)
     }
 
@@ -113,7 +115,14 @@ class Mob : Creature {
     let defBase = 25
     let healthBase = 100
 
-    var level : Int!
+    var level : Int = 0  {
+        didSet{
+            self.health.max = healthBase + ((level - 1) * 20)
+            self.health.current = self.health.max
+            self.atk = atkBase + ((level - 1) * 20)
+            self.def = defBase + ((level - 1) * 5)
+        }
+    }
 
     override var living : Bool {
         didSet {
@@ -128,12 +137,8 @@ class Mob : Creature {
 
         self.name = name
         self.living = true
-        
-        self.health.max = healthBase + ((level - 1) * 20)
-        self.atk = atkBase + ((level - 1) * 20)
-        self.def = defBase + ((level - 1) * 5)
 
-        setLevel(1)
+        setLevel(level)
     }
 
     func setLevel(level: Int) {
